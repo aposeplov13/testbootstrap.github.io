@@ -50,7 +50,7 @@ AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml appl
 <ifModule mod_headers.c>
 # 30 дней
 <filesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|swf|svg)$">
-Header set Cache-Control "max-age=2592000, public"
+Header set Cache-Control "max-age=600, public"
 </filesMatch>
 # 30 дней
 <filesMatch "\.(css|js)$">
