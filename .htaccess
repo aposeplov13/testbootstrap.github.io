@@ -1,7 +1,7 @@
 # Cache-Control
 <ifModule mod_headers.c>
 <filesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|swf|svg)$">
-Header set Cache-Control "max-age=600, public"
+Header set Cache-Control "max-age=2592000, public"
 </filesMatch>
 # 30 дней
 <filesMatch "\.(css|js)$">
@@ -16,7 +16,6 @@ Header set Cache-Control "max-age=172800, public, must-revalidate"
 Header set Cache-Control "max-age=172800, private, must-revalidate"
 </filesMatch>
 </ifModule>
-
 
 <ifModule mod_expires.c>
 
@@ -35,8 +34,8 @@ ExpiresDefault "access plus 5 seconds"
 
 # Cache Images
 ExpiresByType image/x-icon "access plus 2592000 seconds"
-ExpiresByType image/jpeg "access plus 10 minutes"
-ExpiresByType image/jpg "access plus 11 minutes"
+ExpiresByType image/jpeg "access plus 2592000 seconds"
+ExpiresByType image/jpg "access plus 2592000 seconds"
 ExpiresByType image/png "access plus 2592000 seconds"
 ExpiresByType image/gif "access plus 2592000 seconds"
 ExpiresByType image/svg+xml "access plus 2592000 seconds"
