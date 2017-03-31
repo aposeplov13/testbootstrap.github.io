@@ -1,3 +1,4 @@
 <ifModule mod_expires.c>
 ExpiresByType image/jpeg "access plus 4 weeks"
+ExpiresByType image/jpg "access plus 4 weeks"
 </ifModule>
